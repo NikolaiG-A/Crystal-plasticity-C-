@@ -1,0 +1,19 @@
+4	NUM_THREADS // number of threads for parallel computation
+10	n_x // number of nodes in x - direction
+10	n_y // number of nodes in x - direction
+1.0	h0 // separation between the points
+F	bc_type // type of boundary conditions:"F" - affine deformation gradient
+0	u_hor_per // periodicity on HORIZONTAL displacements for LEFT/RIGHT edges
+0	v_hor_per // periodicity on VERTICAL displacements for LEFT/RIGHT edges
+0	u_ver_per // periodicity on HORIZONTAL displacements for TOP/BOTTOM edges
+0	v_ver_per // periodicity on VERTICAL displacements for TOP/BOTTOM edges
+0.	s // initial value of the loading parameter
+1.0E-4	ds // loading step
+0.2	s_max // maximum load
+poly	en_type // energy type: "poly" - polynomial
+sq	sym // symmetry: "sq" - square lattice, "hex" - hexagonal lattice
+1.0	K // bulk modulus
+0.	epsg // tolerance of the gradient norm during the optimisation
+1.0E-8	epsf // tolerance of the function values difference during the optimisation
+1.0E-7	epsx // tolerance of the argument difference during the optimisation
+0	maxits // maximum number of iterations (0 - unlimited number of iterations)
